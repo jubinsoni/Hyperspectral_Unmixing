@@ -1,0 +1,13 @@
+% This set of files contains the Matlab code
+% for hyperspectral unmixing via Collaborative Nonnegative Matrix Factorization (CoNMF)
+%
+% J. Li, J. M. Bioucas-Dias, A. Plaza and L. Liu, "Robust Collaborative 
+% Nonnegative Matrix Factorization for Hyperspectral Unmixing," 
+% in IEEE Transactions on Geoscience and Remote Sensing, vol. 54, no. 10, 
+% pp. 6076-6090, Oct. 2016. doi: 10.1109/TGRS.2016.2580702
+%
+%  authors: jun@lx.it.pt. bioucas@lx.it.pt, aplaza@unex.es
+%  August, 2010
+%
+%
+

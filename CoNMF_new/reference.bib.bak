@@ -1,0 +1,17 @@
+% Encoding: UTF-8
+
+@Article{Li2016CoNMF,
+  author    = {Jun Li and Jose M. Bioucas-Dias and Antonio Plaza and Lin Liu},
+  title     = {Robust Collaborative Nonnegative Matrix Factorization for Hyperspectral Unmixing},
+  journal   = {{IEEE} Trans. Geosci. Remote Sensing},
+  year      = {2016},
+  volume    = {54},
+  number    = {10},
+  pages     = {6076--6090},
+  month     = {oct},
+  doi       = {10.1109/tgrs.2016.2580702},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  url       = {http://dx.doi.org/10.1109/TGRS.2016.2580702},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

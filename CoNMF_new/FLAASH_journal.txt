@@ -1,0 +1,5509 @@
+FLAASH Run Date: Tue Jun 06 17:55:05 2017
+  Tiled Processing Being Used
+  Tile Dimensions = [256 x 727]
+  Total Number of Tiles = 4
+
+********************************************************************************
+** Making Visibility MODTRAN Data Using Scriptfile.008
+********************************************************************************
+
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command M
+Select option:
+   g = standard GUI interface
+   v = visibility setup
+script command call
+Estimated MODTRAN run time:      0.080685223 min
+Estimated MODTRAN run time:      0.081564411 min
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command R
+Run MODTRAN using tape5 in current directory:
+     Are you sure?  y=yes  n=no
+script command y
+Converting tape7 to ACC archive (.fla) file for storage
+Select archive filename
+Opening archive file to write:   D:\Field Hyperion\FLASSH\acc_modroot.fla
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+No. of spectra=       1
+No. of spectra=       2
+No. of spectra=       3
+No. of spectra=       4
+No. of spectra=       5
+No. of spectra=       6
+No. of spectra=       7
+No. of spectra=       8
+No. of spectra=       9
+No. of spectra=      10
+No. of spectra=      11
+No. of spectra=      12
+No. of spectra=      13
+No. of spectra=      14
+No. of spectra=      15
+No. of spectra=      16
+No. of spectra=      17
+No. of spectra=      18
+No. of spectra=      19
+No. of spectra=      20
+No. of spectra=      21
+No. of spectra=      22
+No. of spectra=      23
+No. of spectra=      24
+No. of spectra=      25
+No. of spectra=      26
+No. of spectra=      27
+Column water range=       4.11284  to        4.11284 g/cm2
+       (       5117.12 to       5117.12 atm-cm)
+No. of frequencies=    5293
+File archived
+Use D:\Field Hyperion\FLASSH\acc_modroot.fla  as current MODTRAN archive file?
+    0 = no
+    1 = use as altitude loop file
+    2 = use as water loop file
+    3 = use as aerosol loop file
+script command 3
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** Computing Visibility For Tile 1
+********************************************************************************
+
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  KT upper=         195         196         197
+         198         199 KT lower=          29
+          30          31          32
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tmp (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command k
+Use adjacency correction?   y = yes   n = no
+script command y
+Pixel selection:
+Enter s (select from list) or a (automatic):
+script command a
+Enter
+ 1 to use existing Kaufman-Tanre channels           29-          32 and          195-         199
+ 3 for manual entry of channels-switch to littoral for more than two bands selected
+ 4 to use passed-in choice of visibility method: kaufman-tanre
+script command 4
+Read in MODTRAN calc. for long bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Read in MODTRAN calc. for short bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Loading image data...
+Start image line loops
+End image line loops; start retrieval
+Number of pixels rejected by NIR/red ratio method:      186112.
+Number of pixels rejected for negative long bandpass:     0.000000
+No valid pixels for aerosol retrieval
+For later calculations, substitute value of       40.0000 will be used.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** Computing Visibility For Tile 2
+********************************************************************************
+
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  KT upper=         195         196         197
+         198         199 KT lower=          29
+          30          31          32
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tmp (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command k
+Use adjacency correction?   y = yes   n = no
+script command y
+Pixel selection:
+Enter s (select from list) or a (automatic):
+script command a
+Enter
+ 1 to use existing Kaufman-Tanre channels           29-          32 and          195-         199
+ 3 for manual entry of channels-switch to littoral for more than two bands selected
+ 4 to use passed-in choice of visibility method: kaufman-tanre
+script command 4
+Read in MODTRAN calc. for long bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Read in MODTRAN calc. for short bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Loading image data...
+Start image line loops
+End image line loops; start retrieval
+Number of pixels rejected by NIR/red ratio method:      186112.
+Number of pixels rejected for negative long bandpass:     0.000000
+No valid pixels for aerosol retrieval
+For later calculations, substitute value of       40.0000 will be used.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** Computing Visibility For Tile 3
+********************************************************************************
+
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  KT upper=         195         196         197
+         198         199 KT lower=          29
+          30          31          32
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tmp (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command k
+Use adjacency correction?   y = yes   n = no
+script command y
+Pixel selection:
+Enter s (select from list) or a (automatic):
+script command a
+Enter
+ 1 to use existing Kaufman-Tanre channels           29-          32 and          195-         199
+ 3 for manual entry of channels-switch to littoral for more than two bands selected
+ 4 to use passed-in choice of visibility method: kaufman-tanre
+script command 4
+Read in MODTRAN calc. for long bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Read in MODTRAN calc. for short bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Loading image data...
+Start image line loops
+End image line loops; start retrieval
+Number of pixels rejected by NIR/red ratio method:      186112.
+Number of pixels rejected for negative long bandpass:     0.000000
+No valid pixels for aerosol retrieval
+For later calculations, substitute value of       40.0000 will be used.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** Computing Visibility For Tile 4
+********************************************************************************
+
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  KT upper=         195         196         197
+         198         199 KT lower=          29
+          30          31          32
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tmp (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command k
+Use adjacency correction?   y = yes   n = no
+script command y
+Pixel selection:
+Enter s (select from list) or a (automatic):
+script command a
+Enter
+ 1 to use existing Kaufman-Tanre channels           29-          32 and          195-         199
+ 3 for manual entry of channels-switch to littoral for more than two bands selected
+ 4 to use passed-in choice of visibility method: kaufman-tanre
+script command 4
+Read in MODTRAN calc. for long bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Read in MODTRAN calc. for short bandpass:
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Loading image data...
+Start image line loops
+End image line loops; start retrieval
+Number of pixels rejected by NIR/red ratio method:      185344.
+Number of pixels rejected for negative long bandpass:     0.000000
+No valid pixels for aerosol retrieval
+For later calculations, substitute value of       40.0000 will be used.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** Computing Scene Average Visibility
+********************************************************************************
+
+Tile Visibilities (km):
+  Tile 1 = 40.0000
+  Tile 2 = 40.0000
+  Tile 3 = 40.0000
+  Tile 4 = 40.0000
+Number of outliers removed = 0
+Mean Visibility = 40.0000
+
+********************************************************************************
+** FLAASH Tile 1 Reflectance Retrieval Using Scriptfile.006
+********************************************************************************
+
+Warning: first requested MODTRAN run calls for existing statistics; changing to no-statistics
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command M
+Select option:
+   g = standard GUI interface
+   v = visibility setup
+script command call
+Estimated MODTRAN run time:      0.026823540 min
+Estimated MODTRAN run time:      0.028566469 min
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command R
+Run MODTRAN using tape5 in current directory:
+     Are you sure?  y=yes  n=no
+script command y
+Converting tape7 to ACC archive (.fla) file for storage
+Select archive filename
+Opening archive file to write:   D:\Field Hyperion\FLASSH\acc_modroot.fla
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+No. of spectra=       1
+No. of spectra=       2
+No. of spectra=       3
+No. of spectra=       4
+No. of spectra=       5
+No. of spectra=       6
+No. of spectra=       7
+No. of spectra=       8
+No. of spectra=       9
+Column water range=       3.70156  to        4.52413 g/cm2
+       (       4605.41 to       5628.83 atm-cm)
+No. of frequencies=    5293
+File archived
+Use D:\Field Hyperion\FLASSH\acc_modroot.fla  as current MODTRAN archive file?
+    0 = no
+    1 = use as altitude loop file
+    2 = use as water loop file
+    3 = use as aerosol loop file
+script command 2
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command MSc
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Calculating doverb
+*Not displaying surface image of look-up table
+Not plotting calculated MODTRAN spectra
+Completed processing MS MODTRAN calculations
+Center water column value from MODTRAN is       4.11284 gm/cm2
+Type y to use this, n to enter a value
+script command y
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile0_illumination_functions.sli
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile0_illumination_functions.txt
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tile0.img (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command r
+Use adjacency correction?   y = yes   n = no
+script command y
+The output resolution sets the number of wavelength channels over
+which spectral polishing will be carried out.  Values less than 2
+give no polishing.  Present value is        2
+Please enter an integer for output resolution, or <Enter> for present value.
+Polishing resolution passed in=
+ 
+This calculation will use spectral polishing at resolution=   9
+Total radiance coefficients calculated
+Opening output reflectance file to write:   D:\Field Hyperion\FLASSH\tile0.img
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+Begin image correction loop
+Completed line       1
+Completed line       2
+Completed line       3
+Completed line       4
+Completed line       5
+Completed line       6
+Completed line       7
+Completed line       8
+Completed line       9
+Completed line      10
+Completed line      11
+Completed line      12
+Completed line      13
+Completed line      14
+Completed line      15
+Completed line      16
+Completed line      17
+Completed line      18
+Completed line      19
+Completed line      20
+Completed line      21
+Completed line      22
+Completed line      23
+Completed line      24
+Completed line      25
+Completed line      26
+Completed line      27
+Completed line      28
+Completed line      29
+Completed line      30
+Completed line      31
+Completed line      32
+Completed line      33
+Completed line      34
+Completed line      35
+Completed line      36
+Completed line      37
+Completed line      38
+Completed line      39
+Completed line      40
+Completed line      41
+Completed line      42
+Completed line      43
+Completed line      44
+Completed line      45
+Completed line      46
+Completed line      47
+Completed line      48
+Completed line      49
+Completed line      50
+Completed line      51
+Completed line      52
+Completed line      53
+Completed line      54
+Completed line      55
+Completed line      56
+Completed line      57
+Completed line      58
+Completed line      59
+Completed line      60
+Completed line      61
+Completed line      62
+Completed line      63
+Completed line      64
+Completed line      65
+Completed line      66
+Completed line      67
+Completed line      68
+Completed line      69
+Completed line      70
+Completed line      71
+Completed line      72
+Completed line      73
+Completed line      74
+Completed line      75
+Completed line      76
+Completed line      77
+Completed line      78
+Completed line      79
+Completed line      80
+Completed line      81
+Completed line      82
+Completed line      83
+Completed line      84
+Completed line      85
+Completed line      86
+Completed line      87
+Completed line      88
+Completed line      89
+Completed line      90
+Completed line      91
+Completed line      92
+Completed line      93
+Completed line      94
+Completed line      95
+Completed line      96
+Completed line      97
+Completed line      98
+Completed line      99
+Completed line     100
+Completed line     101
+Completed line     102
+Completed line     103
+Completed line     104
+Completed line     105
+Completed line     106
+Completed line     107
+Completed line     108
+Completed line     109
+Completed line     110
+Completed line     111
+Completed line     112
+Completed line     113
+Completed line     114
+Completed line     115
+Completed line     116
+Completed line     117
+Completed line     118
+Completed line     119
+Completed line     120
+Completed line     121
+Completed line     122
+Completed line     123
+Completed line     124
+Completed line     125
+Completed line     126
+Completed line     127
+Completed line     128
+Completed line     129
+Completed line     130
+Completed line     131
+Completed line     132
+Completed line     133
+Completed line     134
+Completed line     135
+Completed line     136
+Completed line     137
+Completed line     138
+Completed line     139
+Completed line     140
+Completed line     141
+Completed line     142
+Completed line     143
+Completed line     144
+Completed line     145
+Completed line     146
+Completed line     147
+Completed line     148
+Completed line     149
+Completed line     150
+Completed line     151
+Completed line     152
+Completed line     153
+Completed line     154
+Completed line     155
+Completed line     156
+Completed line     157
+Completed line     158
+Completed line     159
+Completed line     160
+Completed line     161
+Completed line     162
+Completed line     163
+Completed line     164
+Completed line     165
+Completed line     166
+Completed line     167
+Completed line     168
+Completed line     169
+Completed line     170
+Completed line     171
+Completed line     172
+Completed line     173
+Completed line     174
+Completed line     175
+Completed line     176
+Completed line     177
+Completed line     178
+Completed line     179
+Completed line     180
+Completed line     181
+Completed line     182
+Completed line     183
+Completed line     184
+Completed line     185
+Completed line     186
+Completed line     187
+Completed line     188
+Completed line     189
+Completed line     190
+Completed line     191
+Completed line     192
+Completed line     193
+Completed line     194
+Completed line     195
+Completed line     196
+Completed line     197
+Completed line     198
+Completed line     199
+Completed line     200
+Completed line     201
+Completed line     202
+Completed line     203
+Completed line     204
+Completed line     205
+Completed line     206
+Completed line     207
+Completed line     208
+Completed line     209
+Completed line     210
+Completed line     211
+Completed line     212
+Completed line     213
+Completed line     214
+Completed line     215
+Completed line     216
+Completed line     217
+Completed line     218
+Completed line     219
+Completed line     220
+Completed line     221
+Completed line     222
+Completed line     223
+Completed line     224
+Completed line     225
+Completed line     226
+Completed line     227
+Completed line     228
+Completed line     229
+Completed line     230
+Completed line     231
+Completed line     232
+Completed line     233
+Completed line     234
+Completed line     235
+Completed line     236
+Completed line     237
+Completed line     238
+Completed line     239
+Completed line     240
+Completed line     241
+Completed line     242
+Completed line     243
+Completed line     244
+Completed line     245
+Completed line     246
+Completed line     247
+Completed line     248
+Completed line     249
+Completed line     250
+Completed line     251
+Completed line     252
+Completed line     253
+Completed line     254
+Completed line     255
+Completed line     256
+Completed line     257
+Completed line     258
+Completed line     259
+Completed line     260
+Completed line     261
+Completed line     262
+Completed line     263
+Completed line     264
+Completed line     265
+Completed line     266
+Completed line     267
+Completed line     268
+Completed line     269
+Completed line     270
+Completed line     271
+Completed line     272
+Completed line     273
+Completed line     274
+Completed line     275
+Completed line     276
+Completed line     277
+Completed line     278
+Completed line     279
+Completed line     280
+Completed line     281
+Completed line     282
+Completed line     283
+Completed line     284
+Completed line     285
+Completed line     286
+Completed line     287
+Completed line     288
+Completed line     289
+Completed line     290
+Completed line     291
+Completed line     292
+Completed line     293
+Completed line     294
+Completed line     295
+Completed line     296
+Completed line     297
+Completed line     298
+Completed line     299
+Completed line     300
+Completed line     301
+Completed line     302
+Completed line     303
+Completed line     304
+Completed line     305
+Completed line     306
+Completed line     307
+Completed line     308
+Completed line     309
+Completed line     310
+Completed line     311
+Completed line     312
+Completed line     313
+Completed line     314
+Completed line     315
+Completed line     316
+Completed line     317
+Completed line     318
+Completed line     319
+Completed line     320
+Completed line     321
+Completed line     322
+Completed line     323
+Completed line     324
+Completed line     325
+Completed line     326
+Completed line     327
+Completed line     328
+Completed line     329
+Completed line     330
+Completed line     331
+Completed line     332
+Completed line     333
+Completed line     334
+Completed line     335
+Completed line     336
+Completed line     337
+Completed line     338
+Completed line     339
+Completed line     340
+Completed line     341
+Completed line     342
+Completed line     343
+Completed line     344
+Completed line     345
+Completed line     346
+Completed line     347
+Completed line     348
+Completed line     349
+Completed line     350
+Completed line     351
+Completed line     352
+Completed line     353
+Completed line     354
+Completed line     355
+Completed line     356
+Completed line     357
+Completed line     358
+Completed line     359
+Completed line     360
+Completed line     361
+Completed line     362
+Completed line     363
+Completed line     364
+Completed line     365
+Completed line     366
+Completed line     367
+Completed line     368
+Completed line     369
+Completed line     370
+Completed line     371
+Completed line     372
+Completed line     373
+Completed line     374
+Completed line     375
+Completed line     376
+Completed line     377
+Completed line     378
+Completed line     379
+Completed line     380
+Completed line     381
+Completed line     382
+Completed line     383
+Completed line     384
+Completed line     385
+Completed line     386
+Completed line     387
+Completed line     388
+Completed line     389
+Completed line     390
+Completed line     391
+Completed line     392
+Completed line     393
+Completed line     394
+Completed line     395
+Completed line     396
+Completed line     397
+Completed line     398
+Completed line     399
+Completed line     400
+Completed line     401
+Completed line     402
+Completed line     403
+Completed line     404
+Completed line     405
+Completed line     406
+Completed line     407
+Completed line     408
+Completed line     409
+Completed line     410
+Completed line     411
+Completed line     412
+Completed line     413
+Completed line     414
+Completed line     415
+Completed line     416
+Completed line     417
+Completed line     418
+Completed line     419
+Completed line     420
+Completed line     421
+Completed line     422
+Completed line     423
+Completed line     424
+Completed line     425
+Completed line     426
+Completed line     427
+Completed line     428
+Completed line     429
+Completed line     430
+Completed line     431
+Completed line     432
+Completed line     433
+Completed line     434
+Completed line     435
+Completed line     436
+Completed line     437
+Completed line     438
+Completed line     439
+Completed line     440
+Completed line     441
+Completed line     442
+Completed line     443
+Completed line     444
+Completed line     445
+Completed line     446
+Completed line     447
+Completed line     448
+Completed line     449
+Completed line     450
+Completed line     451
+Completed line     452
+Completed line     453
+Completed line     454
+Completed line     455
+Completed line     456
+Completed line     457
+Completed line     458
+Completed line     459
+Completed line     460
+Completed line     461
+Completed line     462
+Completed line     463
+Completed line     464
+Completed line     465
+Completed line     466
+Completed line     467
+Completed line     468
+Completed line     469
+Completed line     470
+Completed line     471
+Completed line     472
+Completed line     473
+Completed line     474
+Completed line     475
+Completed line     476
+Completed line     477
+Completed line     478
+Completed line     479
+Completed line     480
+Completed line     481
+Completed line     482
+Completed line     483
+Completed line     484
+Completed line     485
+Completed line     486
+Completed line     487
+Completed line     488
+Completed line     489
+Completed line     490
+Completed line     491
+Completed line     492
+Completed line     493
+Completed line     494
+Completed line     495
+Completed line     496
+Completed line     497
+Completed line     498
+Completed line     499
+Completed line     500
+Completed line     501
+Completed line     502
+Completed line     503
+Completed line     504
+Completed line     505
+Completed line     506
+Completed line     507
+Completed line     508
+Completed line     509
+Completed line     510
+Completed line     511
+Completed line     512
+Completed line     513
+Completed line     514
+Completed line     515
+Completed line     516
+Completed line     517
+Completed line     518
+Completed line     519
+Completed line     520
+Completed line     521
+Completed line     522
+Completed line     523
+Completed line     524
+Completed line     525
+Completed line     526
+Completed line     527
+Completed line     528
+Completed line     529
+Completed line     530
+Completed line     531
+Completed line     532
+Completed line     533
+Completed line     534
+Completed line     535
+Completed line     536
+Completed line     537
+Completed line     538
+Completed line     539
+Completed line     540
+Completed line     541
+Completed line     542
+Completed line     543
+Completed line     544
+Completed line     545
+Completed line     546
+Completed line     547
+Completed line     548
+Completed line     549
+Completed line     550
+Completed line     551
+Completed line     552
+Completed line     553
+Completed line     554
+Completed line     555
+Completed line     556
+Completed line     557
+Completed line     558
+Completed line     559
+Completed line     560
+Completed line     561
+Completed line     562
+Completed line     563
+Completed line     564
+Completed line     565
+Completed line     566
+Completed line     567
+Completed line     568
+Completed line     569
+Completed line     570
+Completed line     571
+Completed line     572
+Completed line     573
+Completed line     574
+Completed line     575
+Completed line     576
+Completed line     577
+Completed line     578
+Completed line     579
+Completed line     580
+Completed line     581
+Completed line     582
+Completed line     583
+Completed line     584
+Completed line     585
+Completed line     586
+Completed line     587
+Completed line     588
+Completed line     589
+Completed line     590
+Completed line     591
+Completed line     592
+Completed line     593
+Completed line     594
+Completed line     595
+Completed line     596
+Completed line     597
+Completed line     598
+Completed line     599
+Completed line     600
+Completed line     601
+Completed line     602
+Completed line     603
+Completed line     604
+Completed line     605
+Completed line     606
+Completed line     607
+Completed line     608
+Completed line     609
+Completed line     610
+Completed line     611
+Completed line     612
+Completed line     613
+Completed line     614
+Completed line     615
+Completed line     616
+Completed line     617
+Completed line     618
+Completed line     619
+Completed line     620
+Completed line     621
+Completed line     622
+Completed line     623
+Completed line     624
+Completed line     625
+Completed line     626
+Completed line     627
+Completed line     628
+Completed line     629
+Completed line     630
+Completed line     631
+Completed line     632
+Completed line     633
+Completed line     634
+Completed line     635
+Completed line     636
+Completed line     637
+Completed line     638
+Completed line     639
+Completed line     640
+Completed line     641
+Completed line     642
+Completed line     643
+Completed line     644
+Completed line     645
+Completed line     646
+Completed line     647
+Completed line     648
+Completed line     649
+Completed line     650
+Completed line     651
+Completed line     652
+Completed line     653
+Completed line     654
+Completed line     655
+Completed line     656
+Completed line     657
+Completed line     658
+Completed line     659
+Completed line     660
+Completed line     661
+Completed line     662
+Completed line     663
+Completed line     664
+Completed line     665
+Completed line     666
+Completed line     667
+Completed line     668
+Completed line     669
+Completed line     670
+Completed line     671
+Completed line     672
+Completed line     673
+Completed line     674
+Completed line     675
+Completed line     676
+Completed line     677
+Completed line     678
+Completed line     679
+Completed line     680
+Completed line     681
+Completed line     682
+Completed line     683
+Completed line     684
+Completed line     685
+Completed line     686
+Completed line     687
+Completed line     688
+Completed line     689
+Completed line     690
+Completed line     691
+Completed line     692
+Completed line     693
+Completed line     694
+Completed line     695
+Completed line     696
+Completed line     697
+Completed line     698
+Completed line     699
+Completed line     700
+Completed line     701
+Completed line     702
+Completed line     703
+Completed line     704
+Completed line     705
+Completed line     706
+Completed line     707
+Completed line     708
+Completed line     709
+Completed line     710
+Completed line     711
+Completed line     712
+Completed line     713
+Completed line     714
+Completed line     715
+Completed line     716
+Completed line     717
+Completed line     718
+Completed line     719
+Completed line     720
+Completed line     721
+Completed line     722
+Completed line     723
+Completed line     724
+Completed line     725
+Completed line     726
+Completed line     727
+Not plotting polishing scatter plot and histogram.
+Opening input radiance file to read
+Opening input spectrally smoothed radiance file to read
+Calculating factor, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Applying smoothing factor to data, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Not displaying RGB reflectance image.
+Not displaying image of pixels used for polishing.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** FLAASH Tile 2 Reflectance Retrieval Using Scriptfile.007
+********************************************************************************
+
+Warning: first requested MODTRAN run calls for existing statistics; changing to no-statistics
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command MSc
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Calculating doverb
+*Not displaying surface image of look-up table
+Not plotting calculated MODTRAN spectra
+Completed processing MS MODTRAN calculations
+Center water column value from MODTRAN is       4.11284 gm/cm2
+Type y to use this, n to enter a value
+script command y
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile1_illumination_functions.sli
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile1_illumination_functions.txt
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tile1.img (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command r
+Use adjacency correction?   y = yes   n = no
+script command y
+The output resolution sets the number of wavelength channels over
+which spectral polishing will be carried out.  Values less than 2
+give no polishing.  Present value is        2
+Please enter an integer for output resolution, or <Enter> for present value.
+Polishing resolution passed in=
+ 
+This calculation will use spectral polishing at resolution=   9
+Total radiance coefficients calculated
+Opening output reflectance file to write:   D:\Field Hyperion\FLASSH\tile1.img
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+Begin image correction loop
+Completed line       1
+Completed line       2
+Completed line       3
+Completed line       4
+Completed line       5
+Completed line       6
+Completed line       7
+Completed line       8
+Completed line       9
+Completed line      10
+Completed line      11
+Completed line      12
+Completed line      13
+Completed line      14
+Completed line      15
+Completed line      16
+Completed line      17
+Completed line      18
+Completed line      19
+Completed line      20
+Completed line      21
+Completed line      22
+Completed line      23
+Completed line      24
+Completed line      25
+Completed line      26
+Completed line      27
+Completed line      28
+Completed line      29
+Completed line      30
+Completed line      31
+Completed line      32
+Completed line      33
+Completed line      34
+Completed line      35
+Completed line      36
+Completed line      37
+Completed line      38
+Completed line      39
+Completed line      40
+Completed line      41
+Completed line      42
+Completed line      43
+Completed line      44
+Completed line      45
+Completed line      46
+Completed line      47
+Completed line      48
+Completed line      49
+Completed line      50
+Completed line      51
+Completed line      52
+Completed line      53
+Completed line      54
+Completed line      55
+Completed line      56
+Completed line      57
+Completed line      58
+Completed line      59
+Completed line      60
+Completed line      61
+Completed line      62
+Completed line      63
+Completed line      64
+Completed line      65
+Completed line      66
+Completed line      67
+Completed line      68
+Completed line      69
+Completed line      70
+Completed line      71
+Completed line      72
+Completed line      73
+Completed line      74
+Completed line      75
+Completed line      76
+Completed line      77
+Completed line      78
+Completed line      79
+Completed line      80
+Completed line      81
+Completed line      82
+Completed line      83
+Completed line      84
+Completed line      85
+Completed line      86
+Completed line      87
+Completed line      88
+Completed line      89
+Completed line      90
+Completed line      91
+Completed line      92
+Completed line      93
+Completed line      94
+Completed line      95
+Completed line      96
+Completed line      97
+Completed line      98
+Completed line      99
+Completed line     100
+Completed line     101
+Completed line     102
+Completed line     103
+Completed line     104
+Completed line     105
+Completed line     106
+Completed line     107
+Completed line     108
+Completed line     109
+Completed line     110
+Completed line     111
+Completed line     112
+Completed line     113
+Completed line     114
+Completed line     115
+Completed line     116
+Completed line     117
+Completed line     118
+Completed line     119
+Completed line     120
+Completed line     121
+Completed line     122
+Completed line     123
+Completed line     124
+Completed line     125
+Completed line     126
+Completed line     127
+Completed line     128
+Completed line     129
+Completed line     130
+Completed line     131
+Completed line     132
+Completed line     133
+Completed line     134
+Completed line     135
+Completed line     136
+Completed line     137
+Completed line     138
+Completed line     139
+Completed line     140
+Completed line     141
+Completed line     142
+Completed line     143
+Completed line     144
+Completed line     145
+Completed line     146
+Completed line     147
+Completed line     148
+Completed line     149
+Completed line     150
+Completed line     151
+Completed line     152
+Completed line     153
+Completed line     154
+Completed line     155
+Completed line     156
+Completed line     157
+Completed line     158
+Completed line     159
+Completed line     160
+Completed line     161
+Completed line     162
+Completed line     163
+Completed line     164
+Completed line     165
+Completed line     166
+Completed line     167
+Completed line     168
+Completed line     169
+Completed line     170
+Completed line     171
+Completed line     172
+Completed line     173
+Completed line     174
+Completed line     175
+Completed line     176
+Completed line     177
+Completed line     178
+Completed line     179
+Completed line     180
+Completed line     181
+Completed line     182
+Completed line     183
+Completed line     184
+Completed line     185
+Completed line     186
+Completed line     187
+Completed line     188
+Completed line     189
+Completed line     190
+Completed line     191
+Completed line     192
+Completed line     193
+Completed line     194
+Completed line     195
+Completed line     196
+Completed line     197
+Completed line     198
+Completed line     199
+Completed line     200
+Completed line     201
+Completed line     202
+Completed line     203
+Completed line     204
+Completed line     205
+Completed line     206
+Completed line     207
+Completed line     208
+Completed line     209
+Completed line     210
+Completed line     211
+Completed line     212
+Completed line     213
+Completed line     214
+Completed line     215
+Completed line     216
+Completed line     217
+Completed line     218
+Completed line     219
+Completed line     220
+Completed line     221
+Completed line     222
+Completed line     223
+Completed line     224
+Completed line     225
+Completed line     226
+Completed line     227
+Completed line     228
+Completed line     229
+Completed line     230
+Completed line     231
+Completed line     232
+Completed line     233
+Completed line     234
+Completed line     235
+Completed line     236
+Completed line     237
+Completed line     238
+Completed line     239
+Completed line     240
+Completed line     241
+Completed line     242
+Completed line     243
+Completed line     244
+Completed line     245
+Completed line     246
+Completed line     247
+Completed line     248
+Completed line     249
+Completed line     250
+Completed line     251
+Completed line     252
+Completed line     253
+Completed line     254
+Completed line     255
+Completed line     256
+Completed line     257
+Completed line     258
+Completed line     259
+Completed line     260
+Completed line     261
+Completed line     262
+Completed line     263
+Completed line     264
+Completed line     265
+Completed line     266
+Completed line     267
+Completed line     268
+Completed line     269
+Completed line     270
+Completed line     271
+Completed line     272
+Completed line     273
+Completed line     274
+Completed line     275
+Completed line     276
+Completed line     277
+Completed line     278
+Completed line     279
+Completed line     280
+Completed line     281
+Completed line     282
+Completed line     283
+Completed line     284
+Completed line     285
+Completed line     286
+Completed line     287
+Completed line     288
+Completed line     289
+Completed line     290
+Completed line     291
+Completed line     292
+Completed line     293
+Completed line     294
+Completed line     295
+Completed line     296
+Completed line     297
+Completed line     298
+Completed line     299
+Completed line     300
+Completed line     301
+Completed line     302
+Completed line     303
+Completed line     304
+Completed line     305
+Completed line     306
+Completed line     307
+Completed line     308
+Completed line     309
+Completed line     310
+Completed line     311
+Completed line     312
+Completed line     313
+Completed line     314
+Completed line     315
+Completed line     316
+Completed line     317
+Completed line     318
+Completed line     319
+Completed line     320
+Completed line     321
+Completed line     322
+Completed line     323
+Completed line     324
+Completed line     325
+Completed line     326
+Completed line     327
+Completed line     328
+Completed line     329
+Completed line     330
+Completed line     331
+Completed line     332
+Completed line     333
+Completed line     334
+Completed line     335
+Completed line     336
+Completed line     337
+Completed line     338
+Completed line     339
+Completed line     340
+Completed line     341
+Completed line     342
+Completed line     343
+Completed line     344
+Completed line     345
+Completed line     346
+Completed line     347
+Completed line     348
+Completed line     349
+Completed line     350
+Completed line     351
+Completed line     352
+Completed line     353
+Completed line     354
+Completed line     355
+Completed line     356
+Completed line     357
+Completed line     358
+Completed line     359
+Completed line     360
+Completed line     361
+Completed line     362
+Completed line     363
+Completed line     364
+Completed line     365
+Completed line     366
+Completed line     367
+Completed line     368
+Completed line     369
+Completed line     370
+Completed line     371
+Completed line     372
+Completed line     373
+Completed line     374
+Completed line     375
+Completed line     376
+Completed line     377
+Completed line     378
+Completed line     379
+Completed line     380
+Completed line     381
+Completed line     382
+Completed line     383
+Completed line     384
+Completed line     385
+Completed line     386
+Completed line     387
+Completed line     388
+Completed line     389
+Completed line     390
+Completed line     391
+Completed line     392
+Completed line     393
+Completed line     394
+Completed line     395
+Completed line     396
+Completed line     397
+Completed line     398
+Completed line     399
+Completed line     400
+Completed line     401
+Completed line     402
+Completed line     403
+Completed line     404
+Completed line     405
+Completed line     406
+Completed line     407
+Completed line     408
+Completed line     409
+Completed line     410
+Completed line     411
+Completed line     412
+Completed line     413
+Completed line     414
+Completed line     415
+Completed line     416
+Completed line     417
+Completed line     418
+Completed line     419
+Completed line     420
+Completed line     421
+Completed line     422
+Completed line     423
+Completed line     424
+Completed line     425
+Completed line     426
+Completed line     427
+Completed line     428
+Completed line     429
+Completed line     430
+Completed line     431
+Completed line     432
+Completed line     433
+Completed line     434
+Completed line     435
+Completed line     436
+Completed line     437
+Completed line     438
+Completed line     439
+Completed line     440
+Completed line     441
+Completed line     442
+Completed line     443
+Completed line     444
+Completed line     445
+Completed line     446
+Completed line     447
+Completed line     448
+Completed line     449
+Completed line     450
+Completed line     451
+Completed line     452
+Completed line     453
+Completed line     454
+Completed line     455
+Completed line     456
+Completed line     457
+Completed line     458
+Completed line     459
+Completed line     460
+Completed line     461
+Completed line     462
+Completed line     463
+Completed line     464
+Completed line     465
+Completed line     466
+Completed line     467
+Completed line     468
+Completed line     469
+Completed line     470
+Completed line     471
+Completed line     472
+Completed line     473
+Completed line     474
+Completed line     475
+Completed line     476
+Completed line     477
+Completed line     478
+Completed line     479
+Completed line     480
+Completed line     481
+Completed line     482
+Completed line     483
+Completed line     484
+Completed line     485
+Completed line     486
+Completed line     487
+Completed line     488
+Completed line     489
+Completed line     490
+Completed line     491
+Completed line     492
+Completed line     493
+Completed line     494
+Completed line     495
+Completed line     496
+Completed line     497
+Completed line     498
+Completed line     499
+Completed line     500
+Completed line     501
+Completed line     502
+Completed line     503
+Completed line     504
+Completed line     505
+Completed line     506
+Completed line     507
+Completed line     508
+Completed line     509
+Completed line     510
+Completed line     511
+Completed line     512
+Completed line     513
+Completed line     514
+Completed line     515
+Completed line     516
+Completed line     517
+Completed line     518
+Completed line     519
+Completed line     520
+Completed line     521
+Completed line     522
+Completed line     523
+Completed line     524
+Completed line     525
+Completed line     526
+Completed line     527
+Completed line     528
+Completed line     529
+Completed line     530
+Completed line     531
+Completed line     532
+Completed line     533
+Completed line     534
+Completed line     535
+Completed line     536
+Completed line     537
+Completed line     538
+Completed line     539
+Completed line     540
+Completed line     541
+Completed line     542
+Completed line     543
+Completed line     544
+Completed line     545
+Completed line     546
+Completed line     547
+Completed line     548
+Completed line     549
+Completed line     550
+Completed line     551
+Completed line     552
+Completed line     553
+Completed line     554
+Completed line     555
+Completed line     556
+Completed line     557
+Completed line     558
+Completed line     559
+Completed line     560
+Completed line     561
+Completed line     562
+Completed line     563
+Completed line     564
+Completed line     565
+Completed line     566
+Completed line     567
+Completed line     568
+Completed line     569
+Completed line     570
+Completed line     571
+Completed line     572
+Completed line     573
+Completed line     574
+Completed line     575
+Completed line     576
+Completed line     577
+Completed line     578
+Completed line     579
+Completed line     580
+Completed line     581
+Completed line     582
+Completed line     583
+Completed line     584
+Completed line     585
+Completed line     586
+Completed line     587
+Completed line     588
+Completed line     589
+Completed line     590
+Completed line     591
+Completed line     592
+Completed line     593
+Completed line     594
+Completed line     595
+Completed line     596
+Completed line     597
+Completed line     598
+Completed line     599
+Completed line     600
+Completed line     601
+Completed line     602
+Completed line     603
+Completed line     604
+Completed line     605
+Completed line     606
+Completed line     607
+Completed line     608
+Completed line     609
+Completed line     610
+Completed line     611
+Completed line     612
+Completed line     613
+Completed line     614
+Completed line     615
+Completed line     616
+Completed line     617
+Completed line     618
+Completed line     619
+Completed line     620
+Completed line     621
+Completed line     622
+Completed line     623
+Completed line     624
+Completed line     625
+Completed line     626
+Completed line     627
+Completed line     628
+Completed line     629
+Completed line     630
+Completed line     631
+Completed line     632
+Completed line     633
+Completed line     634
+Completed line     635
+Completed line     636
+Completed line     637
+Completed line     638
+Completed line     639
+Completed line     640
+Completed line     641
+Completed line     642
+Completed line     643
+Completed line     644
+Completed line     645
+Completed line     646
+Completed line     647
+Completed line     648
+Completed line     649
+Completed line     650
+Completed line     651
+Completed line     652
+Completed line     653
+Completed line     654
+Completed line     655
+Completed line     656
+Completed line     657
+Completed line     658
+Completed line     659
+Completed line     660
+Completed line     661
+Completed line     662
+Completed line     663
+Completed line     664
+Completed line     665
+Completed line     666
+Completed line     667
+Completed line     668
+Completed line     669
+Completed line     670
+Completed line     671
+Completed line     672
+Completed line     673
+Completed line     674
+Completed line     675
+Completed line     676
+Completed line     677
+Completed line     678
+Completed line     679
+Completed line     680
+Completed line     681
+Completed line     682
+Completed line     683
+Completed line     684
+Completed line     685
+Completed line     686
+Completed line     687
+Completed line     688
+Completed line     689
+Completed line     690
+Completed line     691
+Completed line     692
+Completed line     693
+Completed line     694
+Completed line     695
+Completed line     696
+Completed line     697
+Completed line     698
+Completed line     699
+Completed line     700
+Completed line     701
+Completed line     702
+Completed line     703
+Completed line     704
+Completed line     705
+Completed line     706
+Completed line     707
+Completed line     708
+Completed line     709
+Completed line     710
+Completed line     711
+Completed line     712
+Completed line     713
+Completed line     714
+Completed line     715
+Completed line     716
+Completed line     717
+Completed line     718
+Completed line     719
+Completed line     720
+Completed line     721
+Completed line     722
+Completed line     723
+Completed line     724
+Completed line     725
+Completed line     726
+Completed line     727
+Not plotting polishing scatter plot and histogram.
+Opening input radiance file to read
+Opening input spectrally smoothed radiance file to read
+Calculating factor, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Applying smoothing factor to data, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Not displaying RGB reflectance image.
+Not displaying image of pixels used for polishing.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** FLAASH Tile 3 Reflectance Retrieval Using Scriptfile.007
+********************************************************************************
+
+Warning: first requested MODTRAN run calls for existing statistics; changing to no-statistics
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command MSc
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Calculating doverb
+*Not displaying surface image of look-up table
+Not plotting calculated MODTRAN spectra
+Completed processing MS MODTRAN calculations
+Center water column value from MODTRAN is       4.11284 gm/cm2
+Type y to use this, n to enter a value
+script command y
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile2_illumination_functions.sli
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile2_illumination_functions.txt
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tile2.img (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command r
+Use adjacency correction?   y = yes   n = no
+script command y
+The output resolution sets the number of wavelength channels over
+which spectral polishing will be carried out.  Values less than 2
+give no polishing.  Present value is        2
+Please enter an integer for output resolution, or <Enter> for present value.
+Polishing resolution passed in=
+ 
+This calculation will use spectral polishing at resolution=   9
+Total radiance coefficients calculated
+Opening output reflectance file to write:   D:\Field Hyperion\FLASSH\tile2.img
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+Begin image correction loop
+Completed line       1
+Completed line       2
+Completed line       3
+Completed line       4
+Completed line       5
+Completed line       6
+Completed line       7
+Completed line       8
+Completed line       9
+Completed line      10
+Completed line      11
+Completed line      12
+Completed line      13
+Completed line      14
+Completed line      15
+Completed line      16
+Completed line      17
+Completed line      18
+Completed line      19
+Completed line      20
+Completed line      21
+Completed line      22
+Completed line      23
+Completed line      24
+Completed line      25
+Completed line      26
+Completed line      27
+Completed line      28
+Completed line      29
+Completed line      30
+Completed line      31
+Completed line      32
+Completed line      33
+Completed line      34
+Completed line      35
+Completed line      36
+Completed line      37
+Completed line      38
+Completed line      39
+Completed line      40
+Completed line      41
+Completed line      42
+Completed line      43
+Completed line      44
+Completed line      45
+Completed line      46
+Completed line      47
+Completed line      48
+Completed line      49
+Completed line      50
+Completed line      51
+Completed line      52
+Completed line      53
+Completed line      54
+Completed line      55
+Completed line      56
+Completed line      57
+Completed line      58
+Completed line      59
+Completed line      60
+Completed line      61
+Completed line      62
+Completed line      63
+Completed line      64
+Completed line      65
+Completed line      66
+Completed line      67
+Completed line      68
+Completed line      69
+Completed line      70
+Completed line      71
+Completed line      72
+Completed line      73
+Completed line      74
+Completed line      75
+Completed line      76
+Completed line      77
+Completed line      78
+Completed line      79
+Completed line      80
+Completed line      81
+Completed line      82
+Completed line      83
+Completed line      84
+Completed line      85
+Completed line      86
+Completed line      87
+Completed line      88
+Completed line      89
+Completed line      90
+Completed line      91
+Completed line      92
+Completed line      93
+Completed line      94
+Completed line      95
+Completed line      96
+Completed line      97
+Completed line      98
+Completed line      99
+Completed line     100
+Completed line     101
+Completed line     102
+Completed line     103
+Completed line     104
+Completed line     105
+Completed line     106
+Completed line     107
+Completed line     108
+Completed line     109
+Completed line     110
+Completed line     111
+Completed line     112
+Completed line     113
+Completed line     114
+Completed line     115
+Completed line     116
+Completed line     117
+Completed line     118
+Completed line     119
+Completed line     120
+Completed line     121
+Completed line     122
+Completed line     123
+Completed line     124
+Completed line     125
+Completed line     126
+Completed line     127
+Completed line     128
+Completed line     129
+Completed line     130
+Completed line     131
+Completed line     132
+Completed line     133
+Completed line     134
+Completed line     135
+Completed line     136
+Completed line     137
+Completed line     138
+Completed line     139
+Completed line     140
+Completed line     141
+Completed line     142
+Completed line     143
+Completed line     144
+Completed line     145
+Completed line     146
+Completed line     147
+Completed line     148
+Completed line     149
+Completed line     150
+Completed line     151
+Completed line     152
+Completed line     153
+Completed line     154
+Completed line     155
+Completed line     156
+Completed line     157
+Completed line     158
+Completed line     159
+Completed line     160
+Completed line     161
+Completed line     162
+Completed line     163
+Completed line     164
+Completed line     165
+Completed line     166
+Completed line     167
+Completed line     168
+Completed line     169
+Completed line     170
+Completed line     171
+Completed line     172
+Completed line     173
+Completed line     174
+Completed line     175
+Completed line     176
+Completed line     177
+Completed line     178
+Completed line     179
+Completed line     180
+Completed line     181
+Completed line     182
+Completed line     183
+Completed line     184
+Completed line     185
+Completed line     186
+Completed line     187
+Completed line     188
+Completed line     189
+Completed line     190
+Completed line     191
+Completed line     192
+Completed line     193
+Completed line     194
+Completed line     195
+Completed line     196
+Completed line     197
+Completed line     198
+Completed line     199
+Completed line     200
+Completed line     201
+Completed line     202
+Completed line     203
+Completed line     204
+Completed line     205
+Completed line     206
+Completed line     207
+Completed line     208
+Completed line     209
+Completed line     210
+Completed line     211
+Completed line     212
+Completed line     213
+Completed line     214
+Completed line     215
+Completed line     216
+Completed line     217
+Completed line     218
+Completed line     219
+Completed line     220
+Completed line     221
+Completed line     222
+Completed line     223
+Completed line     224
+Completed line     225
+Completed line     226
+Completed line     227
+Completed line     228
+Completed line     229
+Completed line     230
+Completed line     231
+Completed line     232
+Completed line     233
+Completed line     234
+Completed line     235
+Completed line     236
+Completed line     237
+Completed line     238
+Completed line     239
+Completed line     240
+Completed line     241
+Completed line     242
+Completed line     243
+Completed line     244
+Completed line     245
+Completed line     246
+Completed line     247
+Completed line     248
+Completed line     249
+Completed line     250
+Completed line     251
+Completed line     252
+Completed line     253
+Completed line     254
+Completed line     255
+Completed line     256
+Completed line     257
+Completed line     258
+Completed line     259
+Completed line     260
+Completed line     261
+Completed line     262
+Completed line     263
+Completed line     264
+Completed line     265
+Completed line     266
+Completed line     267
+Completed line     268
+Completed line     269
+Completed line     270
+Completed line     271
+Completed line     272
+Completed line     273
+Completed line     274
+Completed line     275
+Completed line     276
+Completed line     277
+Completed line     278
+Completed line     279
+Completed line     280
+Completed line     281
+Completed line     282
+Completed line     283
+Completed line     284
+Completed line     285
+Completed line     286
+Completed line     287
+Completed line     288
+Completed line     289
+Completed line     290
+Completed line     291
+Completed line     292
+Completed line     293
+Completed line     294
+Completed line     295
+Completed line     296
+Completed line     297
+Completed line     298
+Completed line     299
+Completed line     300
+Completed line     301
+Completed line     302
+Completed line     303
+Completed line     304
+Completed line     305
+Completed line     306
+Completed line     307
+Completed line     308
+Completed line     309
+Completed line     310
+Completed line     311
+Completed line     312
+Completed line     313
+Completed line     314
+Completed line     315
+Completed line     316
+Completed line     317
+Completed line     318
+Completed line     319
+Completed line     320
+Completed line     321
+Completed line     322
+Completed line     323
+Completed line     324
+Completed line     325
+Completed line     326
+Completed line     327
+Completed line     328
+Completed line     329
+Completed line     330
+Completed line     331
+Completed line     332
+Completed line     333
+Completed line     334
+Completed line     335
+Completed line     336
+Completed line     337
+Completed line     338
+Completed line     339
+Completed line     340
+Completed line     341
+Completed line     342
+Completed line     343
+Completed line     344
+Completed line     345
+Completed line     346
+Completed line     347
+Completed line     348
+Completed line     349
+Completed line     350
+Completed line     351
+Completed line     352
+Completed line     353
+Completed line     354
+Completed line     355
+Completed line     356
+Completed line     357
+Completed line     358
+Completed line     359
+Completed line     360
+Completed line     361
+Completed line     362
+Completed line     363
+Completed line     364
+Completed line     365
+Completed line     366
+Completed line     367
+Completed line     368
+Completed line     369
+Completed line     370
+Completed line     371
+Completed line     372
+Completed line     373
+Completed line     374
+Completed line     375
+Completed line     376
+Completed line     377
+Completed line     378
+Completed line     379
+Completed line     380
+Completed line     381
+Completed line     382
+Completed line     383
+Completed line     384
+Completed line     385
+Completed line     386
+Completed line     387
+Completed line     388
+Completed line     389
+Completed line     390
+Completed line     391
+Completed line     392
+Completed line     393
+Completed line     394
+Completed line     395
+Completed line     396
+Completed line     397
+Completed line     398
+Completed line     399
+Completed line     400
+Completed line     401
+Completed line     402
+Completed line     403
+Completed line     404
+Completed line     405
+Completed line     406
+Completed line     407
+Completed line     408
+Completed line     409
+Completed line     410
+Completed line     411
+Completed line     412
+Completed line     413
+Completed line     414
+Completed line     415
+Completed line     416
+Completed line     417
+Completed line     418
+Completed line     419
+Completed line     420
+Completed line     421
+Completed line     422
+Completed line     423
+Completed line     424
+Completed line     425
+Completed line     426
+Completed line     427
+Completed line     428
+Completed line     429
+Completed line     430
+Completed line     431
+Completed line     432
+Completed line     433
+Completed line     434
+Completed line     435
+Completed line     436
+Completed line     437
+Completed line     438
+Completed line     439
+Completed line     440
+Completed line     441
+Completed line     442
+Completed line     443
+Completed line     444
+Completed line     445
+Completed line     446
+Completed line     447
+Completed line     448
+Completed line     449
+Completed line     450
+Completed line     451
+Completed line     452
+Completed line     453
+Completed line     454
+Completed line     455
+Completed line     456
+Completed line     457
+Completed line     458
+Completed line     459
+Completed line     460
+Completed line     461
+Completed line     462
+Completed line     463
+Completed line     464
+Completed line     465
+Completed line     466
+Completed line     467
+Completed line     468
+Completed line     469
+Completed line     470
+Completed line     471
+Completed line     472
+Completed line     473
+Completed line     474
+Completed line     475
+Completed line     476
+Completed line     477
+Completed line     478
+Completed line     479
+Completed line     480
+Completed line     481
+Completed line     482
+Completed line     483
+Completed line     484
+Completed line     485
+Completed line     486
+Completed line     487
+Completed line     488
+Completed line     489
+Completed line     490
+Completed line     491
+Completed line     492
+Completed line     493
+Completed line     494
+Completed line     495
+Completed line     496
+Completed line     497
+Completed line     498
+Completed line     499
+Completed line     500
+Completed line     501
+Completed line     502
+Completed line     503
+Completed line     504
+Completed line     505
+Completed line     506
+Completed line     507
+Completed line     508
+Completed line     509
+Completed line     510
+Completed line     511
+Completed line     512
+Completed line     513
+Completed line     514
+Completed line     515
+Completed line     516
+Completed line     517
+Completed line     518
+Completed line     519
+Completed line     520
+Completed line     521
+Completed line     522
+Completed line     523
+Completed line     524
+Completed line     525
+Completed line     526
+Completed line     527
+Completed line     528
+Completed line     529
+Completed line     530
+Completed line     531
+Completed line     532
+Completed line     533
+Completed line     534
+Completed line     535
+Completed line     536
+Completed line     537
+Completed line     538
+Completed line     539
+Completed line     540
+Completed line     541
+Completed line     542
+Completed line     543
+Completed line     544
+Completed line     545
+Completed line     546
+Completed line     547
+Completed line     548
+Completed line     549
+Completed line     550
+Completed line     551
+Completed line     552
+Completed line     553
+Completed line     554
+Completed line     555
+Completed line     556
+Completed line     557
+Completed line     558
+Completed line     559
+Completed line     560
+Completed line     561
+Completed line     562
+Completed line     563
+Completed line     564
+Completed line     565
+Completed line     566
+Completed line     567
+Completed line     568
+Completed line     569
+Completed line     570
+Completed line     571
+Completed line     572
+Completed line     573
+Completed line     574
+Completed line     575
+Completed line     576
+Completed line     577
+Completed line     578
+Completed line     579
+Completed line     580
+Completed line     581
+Completed line     582
+Completed line     583
+Completed line     584
+Completed line     585
+Completed line     586
+Completed line     587
+Completed line     588
+Completed line     589
+Completed line     590
+Completed line     591
+Completed line     592
+Completed line     593
+Completed line     594
+Completed line     595
+Completed line     596
+Completed line     597
+Completed line     598
+Completed line     599
+Completed line     600
+Completed line     601
+Completed line     602
+Completed line     603
+Completed line     604
+Completed line     605
+Completed line     606
+Completed line     607
+Completed line     608
+Completed line     609
+Completed line     610
+Completed line     611
+Completed line     612
+Completed line     613
+Completed line     614
+Completed line     615
+Completed line     616
+Completed line     617
+Completed line     618
+Completed line     619
+Completed line     620
+Completed line     621
+Completed line     622
+Completed line     623
+Completed line     624
+Completed line     625
+Completed line     626
+Completed line     627
+Completed line     628
+Completed line     629
+Completed line     630
+Completed line     631
+Completed line     632
+Completed line     633
+Completed line     634
+Completed line     635
+Completed line     636
+Completed line     637
+Completed line     638
+Completed line     639
+Completed line     640
+Completed line     641
+Completed line     642
+Completed line     643
+Completed line     644
+Completed line     645
+Completed line     646
+Completed line     647
+Completed line     648
+Completed line     649
+Completed line     650
+Completed line     651
+Completed line     652
+Completed line     653
+Completed line     654
+Completed line     655
+Completed line     656
+Completed line     657
+Completed line     658
+Completed line     659
+Completed line     660
+Completed line     661
+Completed line     662
+Completed line     663
+Completed line     664
+Completed line     665
+Completed line     666
+Completed line     667
+Completed line     668
+Completed line     669
+Completed line     670
+Completed line     671
+Completed line     672
+Completed line     673
+Completed line     674
+Completed line     675
+Completed line     676
+Completed line     677
+Completed line     678
+Completed line     679
+Completed line     680
+Completed line     681
+Completed line     682
+Completed line     683
+Completed line     684
+Completed line     685
+Completed line     686
+Completed line     687
+Completed line     688
+Completed line     689
+Completed line     690
+Completed line     691
+Completed line     692
+Completed line     693
+Completed line     694
+Completed line     695
+Completed line     696
+Completed line     697
+Completed line     698
+Completed line     699
+Completed line     700
+Completed line     701
+Completed line     702
+Completed line     703
+Completed line     704
+Completed line     705
+Completed line     706
+Completed line     707
+Completed line     708
+Completed line     709
+Completed line     710
+Completed line     711
+Completed line     712
+Completed line     713
+Completed line     714
+Completed line     715
+Completed line     716
+Completed line     717
+Completed line     718
+Completed line     719
+Completed line     720
+Completed line     721
+Completed line     722
+Completed line     723
+Completed line     724
+Completed line     725
+Completed line     726
+Completed line     727
+Not plotting polishing scatter plot and histogram.
+Opening input radiance file to read
+Opening input spectrally smoothed radiance file to read
+Calculating factor, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Applying smoothing factor to data, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Not displaying RGB reflectance image.
+Not displaying image of pixels used for polishing.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+
+********************************************************************************
+** FLAASH Tile 4 Reflectance Retrieval Using Scriptfile.007
+********************************************************************************
+
+Warning: first requested MODTRAN run calls for existing statistics; changing to no-statistics
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is D:\Field Hyperion\FLASSH\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+Computing wavelength response functions for each channel...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Calculated channel nos. are
+  Oxygen (altitude) ref=      39      40      42       43 abs=          41
+  Water ref=      91      92      93      104     105     106 abs=
+          98          99
+  R,G,B display=          22          23          24
+          25          26          27          28
+          29          30          31          32
+          33          34          14          15
+          16          17          18          19
+          20          21          22          23
+           6           7           8           9
+          10          11          12          13
+  Cirrus=         123
+  0.82 Water ref=      42      43      50       51 abs=          46          47
+  Vegetation-rise cutoff=    0.0602928 from channel 34 to 39
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command MSc
+Reading archive file of previous MODTRAN calculation D:\Field Hyperion\FLASSH\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Calculating doverb
+*Not displaying surface image of look-up table
+Not plotting calculated MODTRAN spectra
+Completed processing MS MODTRAN calculations
+Center water column value from MODTRAN is       4.11284 gm/cm2
+Type y to use this, n to enter a value
+script command y
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile3_illumination_functions.sli
+Writing illumination functions to D:\Field Hyperion\FLASSH\tile3_illumination_functions.txt
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image D:\Field Hyperion\FLASSH\smooth
+Enter 1 to process radiance image D:\Field Hyperion\Pre- Processing\EO1H1410472003159110PZ_bpfix_cal_zfix_mid_outfix_BIL (for reflectance determination)
+         2 to process reflectance image D:\Field Hyperion\FLASSH\tile3.img (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0180140alpha=    0.0300234
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command r
+Use adjacency correction?   y = yes   n = no
+script command y
+The output resolution sets the number of wavelength channels over
+which spectral polishing will be carried out.  Values less than 2
+give no polishing.  Present value is        2
+Please enter an integer for output resolution, or <Enter> for present value.
+Polishing resolution passed in=
+ 
+This calculation will use spectral polishing at resolution=   9
+Total radiance coefficients calculated
+Opening output reflectance file to write:   D:\Field Hyperion\FLASSH\tile3.img
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+Begin image correction loop
+Completed line       1
+Completed line       2
+Completed line       3
+Completed line       4
+Completed line       5
+Completed line       6
+Completed line       7
+Completed line       8
+Completed line       9
+Completed line      10
+Completed line      11
+Completed line      12
+Completed line      13
+Completed line      14
+Completed line      15
+Completed line      16
+Completed line      17
+Completed line      18
+Completed line      19
+Completed line      20
+Completed line      21
+Completed line      22
+Completed line      23
+Completed line      24
+Completed line      25
+Completed line      26
+Completed line      27
+Completed line      28
+Completed line      29
+Completed line      30
+Completed line      31
+Completed line      32
+Completed line      33
+Completed line      34
+Completed line      35
+Completed line      36
+Completed line      37
+Completed line      38
+Completed line      39
+Completed line      40
+Completed line      41
+Completed line      42
+Completed line      43
+Completed line      44
+Completed line      45
+Completed line      46
+Completed line      47
+Completed line      48
+Completed line      49
+Completed line      50
+Completed line      51
+Completed line      52
+Completed line      53
+Completed line      54
+Completed line      55
+Completed line      56
+Completed line      57
+Completed line      58
+Completed line      59
+Completed line      60
+Completed line      61
+Completed line      62
+Completed line      63
+Completed line      64
+Completed line      65
+Completed line      66
+Completed line      67
+Completed line      68
+Completed line      69
+Completed line      70
+Completed line      71
+Completed line      72
+Completed line      73
+Completed line      74
+Completed line      75
+Completed line      76
+Completed line      77
+Completed line      78
+Completed line      79
+Completed line      80
+Completed line      81
+Completed line      82
+Completed line      83
+Completed line      84
+Completed line      85
+Completed line      86
+Completed line      87
+Completed line      88
+Completed line      89
+Completed line      90
+Completed line      91
+Completed line      92
+Completed line      93
+Completed line      94
+Completed line      95
+Completed line      96
+Completed line      97
+Completed line      98
+Completed line      99
+Completed line     100
+Completed line     101
+Completed line     102
+Completed line     103
+Completed line     104
+Completed line     105
+Completed line     106
+Completed line     107
+Completed line     108
+Completed line     109
+Completed line     110
+Completed line     111
+Completed line     112
+Completed line     113
+Completed line     114
+Completed line     115
+Completed line     116
+Completed line     117
+Completed line     118
+Completed line     119
+Completed line     120
+Completed line     121
+Completed line     122
+Completed line     123
+Completed line     124
+Completed line     125
+Completed line     126
+Completed line     127
+Completed line     128
+Completed line     129
+Completed line     130
+Completed line     131
+Completed line     132
+Completed line     133
+Completed line     134
+Completed line     135
+Completed line     136
+Completed line     137
+Completed line     138
+Completed line     139
+Completed line     140
+Completed line     141
+Completed line     142
+Completed line     143
+Completed line     144
+Completed line     145
+Completed line     146
+Completed line     147
+Completed line     148
+Completed line     149
+Completed line     150
+Completed line     151
+Completed line     152
+Completed line     153
+Completed line     154
+Completed line     155
+Completed line     156
+Completed line     157
+Completed line     158
+Completed line     159
+Completed line     160
+Completed line     161
+Completed line     162
+Completed line     163
+Completed line     164
+Completed line     165
+Completed line     166
+Completed line     167
+Completed line     168
+Completed line     169
+Completed line     170
+Completed line     171
+Completed line     172
+Completed line     173
+Completed line     174
+Completed line     175
+Completed line     176
+Completed line     177
+Completed line     178
+Completed line     179
+Completed line     180
+Completed line     181
+Completed line     182
+Completed line     183
+Completed line     184
+Completed line     185
+Completed line     186
+Completed line     187
+Completed line     188
+Completed line     189
+Completed line     190
+Completed line     191
+Completed line     192
+Completed line     193
+Completed line     194
+Completed line     195
+Completed line     196
+Completed line     197
+Completed line     198
+Completed line     199
+Completed line     200
+Completed line     201
+Completed line     202
+Completed line     203
+Completed line     204
+Completed line     205
+Completed line     206
+Completed line     207
+Completed line     208
+Completed line     209
+Completed line     210
+Completed line     211
+Completed line     212
+Completed line     213
+Completed line     214
+Completed line     215
+Completed line     216
+Completed line     217
+Completed line     218
+Completed line     219
+Completed line     220
+Completed line     221
+Completed line     222
+Completed line     223
+Completed line     224
+Completed line     225
+Completed line     226
+Completed line     227
+Completed line     228
+Completed line     229
+Completed line     230
+Completed line     231
+Completed line     232
+Completed line     233
+Completed line     234
+Completed line     235
+Completed line     236
+Completed line     237
+Completed line     238
+Completed line     239
+Completed line     240
+Completed line     241
+Completed line     242
+Completed line     243
+Completed line     244
+Completed line     245
+Completed line     246
+Completed line     247
+Completed line     248
+Completed line     249
+Completed line     250
+Completed line     251
+Completed line     252
+Completed line     253
+Completed line     254
+Completed line     255
+Completed line     256
+Completed line     257
+Completed line     258
+Completed line     259
+Completed line     260
+Completed line     261
+Completed line     262
+Completed line     263
+Completed line     264
+Completed line     265
+Completed line     266
+Completed line     267
+Completed line     268
+Completed line     269
+Completed line     270
+Completed line     271
+Completed line     272
+Completed line     273
+Completed line     274
+Completed line     275
+Completed line     276
+Completed line     277
+Completed line     278
+Completed line     279
+Completed line     280
+Completed line     281
+Completed line     282
+Completed line     283
+Completed line     284
+Completed line     285
+Completed line     286
+Completed line     287
+Completed line     288
+Completed line     289
+Completed line     290
+Completed line     291
+Completed line     292
+Completed line     293
+Completed line     294
+Completed line     295
+Completed line     296
+Completed line     297
+Completed line     298
+Completed line     299
+Completed line     300
+Completed line     301
+Completed line     302
+Completed line     303
+Completed line     304
+Completed line     305
+Completed line     306
+Completed line     307
+Completed line     308
+Completed line     309
+Completed line     310
+Completed line     311
+Completed line     312
+Completed line     313
+Completed line     314
+Completed line     315
+Completed line     316
+Completed line     317
+Completed line     318
+Completed line     319
+Completed line     320
+Completed line     321
+Completed line     322
+Completed line     323
+Completed line     324
+Completed line     325
+Completed line     326
+Completed line     327
+Completed line     328
+Completed line     329
+Completed line     330
+Completed line     331
+Completed line     332
+Completed line     333
+Completed line     334
+Completed line     335
+Completed line     336
+Completed line     337
+Completed line     338
+Completed line     339
+Completed line     340
+Completed line     341
+Completed line     342
+Completed line     343
+Completed line     344
+Completed line     345
+Completed line     346
+Completed line     347
+Completed line     348
+Completed line     349
+Completed line     350
+Completed line     351
+Completed line     352
+Completed line     353
+Completed line     354
+Completed line     355
+Completed line     356
+Completed line     357
+Completed line     358
+Completed line     359
+Completed line     360
+Completed line     361
+Completed line     362
+Completed line     363
+Completed line     364
+Completed line     365
+Completed line     366
+Completed line     367
+Completed line     368
+Completed line     369
+Completed line     370
+Completed line     371
+Completed line     372
+Completed line     373
+Completed line     374
+Completed line     375
+Completed line     376
+Completed line     377
+Completed line     378
+Completed line     379
+Completed line     380
+Completed line     381
+Completed line     382
+Completed line     383
+Completed line     384
+Completed line     385
+Completed line     386
+Completed line     387
+Completed line     388
+Completed line     389
+Completed line     390
+Completed line     391
+Completed line     392
+Completed line     393
+Completed line     394
+Completed line     395
+Completed line     396
+Completed line     397
+Completed line     398
+Completed line     399
+Completed line     400
+Completed line     401
+Completed line     402
+Completed line     403
+Completed line     404
+Completed line     405
+Completed line     406
+Completed line     407
+Completed line     408
+Completed line     409
+Completed line     410
+Completed line     411
+Completed line     412
+Completed line     413
+Completed line     414
+Completed line     415
+Completed line     416
+Completed line     417
+Completed line     418
+Completed line     419
+Completed line     420
+Completed line     421
+Completed line     422
+Completed line     423
+Completed line     424
+Completed line     425
+Completed line     426
+Completed line     427
+Completed line     428
+Completed line     429
+Completed line     430
+Completed line     431
+Completed line     432
+Completed line     433
+Completed line     434
+Completed line     435
+Completed line     436
+Completed line     437
+Completed line     438
+Completed line     439
+Completed line     440
+Completed line     441
+Completed line     442
+Completed line     443
+Completed line     444
+Completed line     445
+Completed line     446
+Completed line     447
+Completed line     448
+Completed line     449
+Completed line     450
+Completed line     451
+Completed line     452
+Completed line     453
+Completed line     454
+Completed line     455
+Completed line     456
+Completed line     457
+Completed line     458
+Completed line     459
+Completed line     460
+Completed line     461
+Completed line     462
+Completed line     463
+Completed line     464
+Completed line     465
+Completed line     466
+Completed line     467
+Completed line     468
+Completed line     469
+Completed line     470
+Completed line     471
+Completed line     472
+Completed line     473
+Completed line     474
+Completed line     475
+Completed line     476
+Completed line     477
+Completed line     478
+Completed line     479
+Completed line     480
+Completed line     481
+Completed line     482
+Completed line     483
+Completed line     484
+Completed line     485
+Completed line     486
+Completed line     487
+Completed line     488
+Completed line     489
+Completed line     490
+Completed line     491
+Completed line     492
+Completed line     493
+Completed line     494
+Completed line     495
+Completed line     496
+Completed line     497
+Completed line     498
+Completed line     499
+Completed line     500
+Completed line     501
+Completed line     502
+Completed line     503
+Completed line     504
+Completed line     505
+Completed line     506
+Completed line     507
+Completed line     508
+Completed line     509
+Completed line     510
+Completed line     511
+Completed line     512
+Completed line     513
+Completed line     514
+Completed line     515
+Completed line     516
+Completed line     517
+Completed line     518
+Completed line     519
+Completed line     520
+Completed line     521
+Completed line     522
+Completed line     523
+Completed line     524
+Completed line     525
+Completed line     526
+Completed line     527
+Completed line     528
+Completed line     529
+Completed line     530
+Completed line     531
+Completed line     532
+Completed line     533
+Completed line     534
+Completed line     535
+Completed line     536
+Completed line     537
+Completed line     538
+Completed line     539
+Completed line     540
+Completed line     541
+Completed line     542
+Completed line     543
+Completed line     544
+Completed line     545
+Completed line     546
+Completed line     547
+Completed line     548
+Completed line     549
+Completed line     550
+Completed line     551
+Completed line     552
+Completed line     553
+Completed line     554
+Completed line     555
+Completed line     556
+Completed line     557
+Completed line     558
+Completed line     559
+Completed line     560
+Completed line     561
+Completed line     562
+Completed line     563
+Completed line     564
+Completed line     565
+Completed line     566
+Completed line     567
+Completed line     568
+Completed line     569
+Completed line     570
+Completed line     571
+Completed line     572
+Completed line     573
+Completed line     574
+Completed line     575
+Completed line     576
+Completed line     577
+Completed line     578
+Completed line     579
+Completed line     580
+Completed line     581
+Completed line     582
+Completed line     583
+Completed line     584
+Completed line     585
+Completed line     586
+Completed line     587
+Completed line     588
+Completed line     589
+Completed line     590
+Completed line     591
+Completed line     592
+Completed line     593
+Completed line     594
+Completed line     595
+Completed line     596
+Completed line     597
+Completed line     598
+Completed line     599
+Completed line     600
+Completed line     601
+Completed line     602
+Completed line     603
+Completed line     604
+Completed line     605
+Completed line     606
+Completed line     607
+Completed line     608
+Completed line     609
+Completed line     610
+Completed line     611
+Completed line     612
+Completed line     613
+Completed line     614
+Completed line     615
+Completed line     616
+Completed line     617
+Completed line     618
+Completed line     619
+Completed line     620
+Completed line     621
+Completed line     622
+Completed line     623
+Completed line     624
+Completed line     625
+Completed line     626
+Completed line     627
+Completed line     628
+Completed line     629
+Completed line     630
+Completed line     631
+Completed line     632
+Completed line     633
+Completed line     634
+Completed line     635
+Completed line     636
+Completed line     637
+Completed line     638
+Completed line     639
+Completed line     640
+Completed line     641
+Completed line     642
+Completed line     643
+Completed line     644
+Completed line     645
+Completed line     646
+Completed line     647
+Completed line     648
+Completed line     649
+Completed line     650
+Completed line     651
+Completed line     652
+Completed line     653
+Completed line     654
+Completed line     655
+Completed line     656
+Completed line     657
+Completed line     658
+Completed line     659
+Completed line     660
+Completed line     661
+Completed line     662
+Completed line     663
+Completed line     664
+Completed line     665
+Completed line     666
+Completed line     667
+Completed line     668
+Completed line     669
+Completed line     670
+Completed line     671
+Completed line     672
+Completed line     673
+Completed line     674
+Completed line     675
+Completed line     676
+Completed line     677
+Completed line     678
+Completed line     679
+Completed line     680
+Completed line     681
+Completed line     682
+Completed line     683
+Completed line     684
+Completed line     685
+Completed line     686
+Completed line     687
+Completed line     688
+Completed line     689
+Completed line     690
+Completed line     691
+Completed line     692
+Completed line     693
+Completed line     694
+Completed line     695
+Completed line     696
+Completed line     697
+Completed line     698
+Completed line     699
+Completed line     700
+Completed line     701
+Completed line     702
+Completed line     703
+Completed line     704
+Completed line     705
+Completed line     706
+Completed line     707
+Completed line     708
+Completed line     709
+Completed line     710
+Completed line     711
+Completed line     712
+Completed line     713
+Completed line     714
+Completed line     715
+Completed line     716
+Completed line     717
+Completed line     718
+Completed line     719
+Completed line     720
+Completed line     721
+Completed line     722
+Completed line     723
+Completed line     724
+Not plotting polishing scatter plot and histogram.
+Opening input radiance file to read
+Opening input spectrally smoothed radiance file to read
+Calculating factor, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Applying smoothing factor to data, line
+       1
+      21
+      41
+      61
+      81
+     101
+     121
+     141
+     161
+     181
+     201
+     221
+     241
+     261
+     281
+     301
+     321
+     341
+     361
+     381
+     401
+     421
+     441
+     461
+     481
+     501
+     521
+     541
+     561
+     581
+     601
+     621
+     641
+     661
+     681
+     701
+     721
+Not displaying RGB reflectance image.
+Not displaying image of pixels used for polishing.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
